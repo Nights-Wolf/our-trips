@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Header";
+import Card from "./Card";
+import zakopane from "./trips";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const travel = zakopane.map(trip => {
+    return <Card 
+    img={trip.img}
+    destiny={trip.destiny}
+    date={trip.date}  
+    description={trip.description}/>
+  })
+  return(
+    <div>
+    <Header />
+    <section className="section--card">
+    {travel}
+    </section>
     </div>
   );
 }
