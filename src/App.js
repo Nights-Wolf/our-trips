@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Card from "./Card";
 import zakopane from "./trips";
+import Footer from "./Footer";
 
 function App() {
   const travel = zakopane.map(trip => {
@@ -16,6 +17,7 @@ function App() {
     <section className="section--card">
     {travel}
     </section>
+    <Footer />
     </div>
   );
 }

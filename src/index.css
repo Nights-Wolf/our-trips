@@ -68,6 +68,15 @@ body {
     padding: 5px;
   }
 
+  footer {
+    display: block;
+    font-weight: bold;
+    border-top: 2px solid black;
+    background: cyan;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
   @media screen and (max-width: 600px) {
 
     body {
