@@ -48,6 +48,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin: 5px;
+    border-bottom-style: dashed;
+    padding-bottom: 2px;
   }
 
   .card--details--destiny {
