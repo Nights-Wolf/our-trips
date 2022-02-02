@@ -8,6 +8,9 @@
 
 body {
   background-image: url("../public/images/background.jpg");
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
   }
 
   header {
@@ -25,6 +28,30 @@ body {
     justify-content: center;
     flex-direction: row;
     min-width: min-content;
+  }
+
+  .right-button {
+    display: block;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    font-size: 4rem;
+    border: none;
+    border-radius: 50px;
+    right: 5px;
+    top: 50%;
+  }
+
+  .left-button {
+    display: block;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    font-size: 4rem;
+    border: none;
+    border-radius: 50px;
+    left: 5px;
+    top: 50%;
   }
 
   .card {
@@ -72,7 +99,9 @@ body {
   }
 
   footer {
-    display: block;
+    position: relative;
+    bottom: 0;
+    width: 100%;
     font-weight: bold;
     border-top: 2px solid black;
     background: cyan;
@@ -89,6 +118,7 @@ body {
       header {
         display: flex;
         justify-content: center;
+        width: 100%;
       }
     
       .title {
@@ -98,9 +128,18 @@ body {
     
       .section--card {
         display: flex;
+        width: fit-content;
         justify-content: center;
+        align-items:flex-end;
         flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
       }
+
+      .right-button, .left-button {
+        display: none;
+      }
+
     
       .card {
         display: flex;
@@ -110,6 +149,10 @@ body {
         width: fit-content;
         background: white;
         border-radius: 5px;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        margin-right: 0;
       } 
     
       .card--image {
@@ -123,6 +166,8 @@ body {
         flex-direction: row;
         justify-content: space-between;
         margin: 5px;
+        border-bottom-style: dashed;
+        padding-bottom: 2px;
       }
     
       .card--details--destiny {
@@ -139,5 +184,15 @@ body {
         font-size: .5rem;
         width: 300px;
         margin: 0;
+      }
+      footer {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        border-top: 2px solid black;
+        background: cyan;
+        text-align: center;
+        font-size: 0.7rem;
+        width: 100%;
       }
     }
