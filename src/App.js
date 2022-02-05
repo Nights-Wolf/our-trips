@@ -2,22 +2,23 @@ import Header from "./Header";
 import Card from "./Card";
 import zakopane from "./trips";
 import Footer from "./Footer";
+import react from "react";
 
 function App() {
-    const travel = zakopane.map(trip => {
-      return <Card 
+    const [card, swapCard] = react.useState(zakopane.map(trip => {
+      return <Card
+      key={trip.id} 
       img={trip.img}
       destiny={trip.destiny}
       date={trip.date}  
       description={trip.description}/>
-  })
+  }))
+
   return(
     <div>
     <Header />
     <section className="section--card">
-    {zakopane.length >= 1 ? travel: <p></p>}
-    <button className="right-button">&#707;</button>
-    <button className="left-button">&#706;</button>
+    {card}
     </section>
     <Footer />
     </div>
