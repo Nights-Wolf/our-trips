@@ -6,11 +6,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --right-position: 50px;
-  --left-position: 50px;
-}
-
 body {
   background-image: url("../public/images/background.jpg");
   height: 100%;
@@ -114,7 +109,6 @@ body {
         display: flex;
         width: fit-content;
         justify-content: center;
-        align-items:flex-end;
         flex-direction: column;
         margin: 0 auto;
         padding: 0;
