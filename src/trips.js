@@ -18,7 +18,7 @@ let trips = [
     img: "londyn.jpeg", 
     destiny: "England", 
     date: "11.01.2019 - 18.09.2019", 
-    description: "We went to England to visit Kamila's sister. It was a week long trip, in which we seen beutifull village named Stoke Buerne, Towcester (in which wwe had quarters) and London - Museum of Natural History, seen Big Ben (which was covered due to renovation) and Sherlock Holmes Museum." 
+    description: "We went to England to visit Kamila's sister. It was a week long trip, in which we seen beutifull village named Stoke Buerne, Towcester (in which we had quarters) and London - Museum of Natural History, seen Big Ben (which was covered due to renovation) and Sherlock Holmes Museum." 
 },
 {
     id: 4,
